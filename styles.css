@@ -1,11 +1,22 @@
 body {
-  background-color: #0f0a20;
+  /* background-color: #0f0a20; */
+  background: rgb(10, 32, 18);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 32, 18, 1) 0%,
+    rgba(121, 9, 97, 1) 50%,
+    rgba(0, 144, 255, 1) 100%
+  );
   color: aliceblue;
 }
 
 nav ul {
   display: flex;
   justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 1rem
 }
 
 header,
@@ -20,4 +31,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about, .projects, .blog, .contact, .resume {
+  padding: 10rem 0;
 }
